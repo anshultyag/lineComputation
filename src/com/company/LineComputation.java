@@ -26,14 +26,5 @@ public class LineComputation {
         Integer x = Integer.valueOf(val1);
         Integer y = Integer.valueOf(val2);
         System.out.println("lines are equal :"+ x.equals(y));
-
-        int result = x.compareTo(y);
-        if (result > 0 )
-            System.out.println("Line1 is greater than line2");
-        else if(result < 0 )
-            System.out.println("line2 is greater than line1");
-        else
-            System.out.println("line 1 is greater than line 2");
-
     }
 }
