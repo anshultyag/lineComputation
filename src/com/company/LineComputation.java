@@ -14,12 +14,18 @@ public class LineComputation {
     public double lineTotal(){
         double lengthOfLine1= Math.sqrt((x2 - x1) ^ 2 + (y2-y1) ^ 2);
               return lengthOfLine1;
-    }
+                }
+
     public static void main(String[] args) {
         LineComputation  l1 = new LineComputation(2,3,4,9);
         System.out.println("length of line 1 : "+ l1.lineTotal());
         LineComputation  l2 = new LineComputation(2,5,4,8);
         System.out.println("length of line 1 : "+ l2.lineTotal());
+        int val1 = (int) l1.lineTotal();
+        int val2 = (int) l2.lineTotal();
+        Integer x = Integer.valueOf(val1);
+        Integer y = Integer.valueOf(val2);
 
+        System.out.println("lines are equal :"+ x.equals(y));
     }
 }
